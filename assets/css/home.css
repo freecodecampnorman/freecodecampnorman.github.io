@@ -1,0 +1,9 @@
+body {
+    padding-top: 55px;
+}
+
+.hero {
+    height: 500px;
+    background: url("../images/fccbg.jpg") no-repeat 0px -600px;
+    background-size: cover;
+}
