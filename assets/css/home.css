@@ -1,9 +1,108 @@
 body {
-    padding-top: 55px;
+    color: #333;
+    font-size: 20px;
+    font-family: 'Hind Madurai', 'Helvetica', ssans-serif;
 }
 
 .hero {
-    height: 500px;
-    background: url("../images/fccbg.jpg") no-repeat 0px -600px;
+    min-height: 500px;
+    height: 40vh;
+    background: url("../images/fccbg.jpg") fixed no-repeat 0 -500px;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.hero h1 {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 3em;
+}
+
+.section-heading {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    margin-bottom: 40px;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.what-is-fcc {
+    padding: 0;
+}
+
+/* .what-is-fcc .section-heading {
+    margin-top: 100px;
+} */
+
+.fcc-logo {
+    background: #006400;
+}
+
+.fcc-logo img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+}
+
+.about-us {
+    background: #eee;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .section-heading {
+        text-align: center;
+    }
+    
+    .what-is-fcc .section-heading,
+    .meetups .section-heading {
+        margin-top: 50px;
+    }
+    
+    .what-is-fcc p {
+        padding-bottom: 50px;
+    }
+}
+
+@media(min-width: 576px) {
+    .section-heading {
+        margin-top: 50px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {    
+    .about-us .section-heading {
+        margin-top: 0;
+    }
+    
+    .what-is-fcc p {
+        margin-bottom: 100px;
+    }
+    
+    .meetups .section-heading {
+        margin-top: 50px;
+    }
+    
+    .what-is-fcc .section-heading {
+        margin-top: 100px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .meetups .content {
+        margin-left: 25px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
