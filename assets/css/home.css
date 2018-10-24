@@ -88,8 +88,12 @@ body {
         margin-bottom: 100px;
     }
     
-    .section-heading {
+    .meetups .section-heading {
         margin-top: 50px;
+    }
+    
+    .what-is-fcc .section-heading {
+        margin-top: 100px;
     }
 }
 
