@@ -1,7 +1,7 @@
 body {
     color: #333;
     font-size: 20px;
-    font-family: 'Hind Madurai', 'Helvetica', ssans-serif;
+    font-family: 'Hind Madurai', 'Helvetica', sans-serif;
 }
 
 .hero {
@@ -54,6 +54,12 @@ body {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+    .hero {
+        height: auto;
+        background-attachment: scroll;
+        background-position: 0 0;
+    }
+    
     .hero h1 {
         font-size: 2em;
     }
@@ -65,6 +71,14 @@ body {
     .what-is-fcc .section-heading,
     .meetups .section-heading {
         margin-top: 50px;
+    }
+    
+    .what-is-fcc .section-heading {
+        font-size: 1.6em;
+    }
+    
+    .content {
+        width: 100%;
     }
     
     .what-is-fcc p {
