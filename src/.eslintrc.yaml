@@ -1,0 +1,45 @@
+---
+  extends: "../.eslintrc.yaml"
+  rules:
+    mocha/no-exclusive-tests: 2
+    mocha/handle-done-callback: 2
+    mocha/no-global-tests: 2
+    mocha/no-identical-title: 2
+    mocha/no-pending-tests: 1
+    mocha/no-setup-in-describe: 1
+    mocha/no-sibling-hooks: 1
+    mocha/no-skipped-tests: 2
+    mocha/no-return-and-callback: 2
+    react/display-name: 0
+    react/jsx-boolean-value: 0
+    react/jsx-curly-spacing: 1
+    react/jsx-max-props-per-line:
+    - 1
+    - maximum: 6
+    react/jsx-no-duplicate-props: 1
+    react/jsx-no-undef: 1
+    react/jsx-sort-prop-types: 1
+    react/jsx-sort-props: 0
+    react/jsx-uses-react: 1
+    react/jsx-uses-vars: 1
+    react/no-danger: 1
+    react/no-did-mount-set-state: [1, allow-in-func]
+    react/no-did-update-set-state: 1
+    react/no-multi-comp: 1
+    react/no-unknown-property: 1
+    react/prop-types: 1
+    react/react-in-jsx-scope: 1
+    react/require-extension: 1
+    react/self-closing-comp: 1
+    react/sort-comp:
+    - 1
+    - order:
+      - /[A-Z_]+$/
+      - static-methods
+      - lifecycle
+      - everything-else
+      - render
+    react/wrap-multilines: 0
+    jsx-quotes: [2, prefer-double]
+  plugins:
+    - "react"
