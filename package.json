@@ -1,9 +1,8 @@
 {
-    "name": "gatsby-starter-default",
+    "name": "freecodecamp-norman",
     "private": true,
-    "description": "A simple starter to get up and developing quickly with Gatsby",
+    "description": "Website for the freeCodeCamp group in Norman, Oklahoma.",
     "version": "0.1.0",
-    "author": "Kyle Mathews <mathews.kyle@gmail.com>",
     "dependencies": {
         "bootstrap": "^4.3.1",
         "gatsby": "^2.15.28",
@@ -29,7 +28,14 @@
         "prettier": "^1.18.2"
     },
     "keywords": [
-        "gatsby"
+        "gatsby",
+        "open source",
+        "hacktoberfest",
+        "react",
+        "javascript",
+        "freecodecamp",
+        "oklahoma",
+        "norman"
     ],
     "license": "MIT",
     "scripts": {

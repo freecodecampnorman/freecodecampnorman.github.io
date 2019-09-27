@@ -1,10 +1,10 @@
 module.exports = {
     siteMetadata: {
         title: `freeCodeCamp Norman`,
-        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-        author: `@gatsbyjs`,
+        description: `Website for the freeCodeCamp group in Norman, Oklahoma.`,
+        author: `freeCodeCamp Norman`,
     },
-    navItems: [],
+    navItems: [{ a: 'test' }],
     plugins: [
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
