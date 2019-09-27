@@ -4,7 +4,6 @@ module.exports = {
         description: `Website for the freeCodeCamp group in Norman, Oklahoma.`,
         author: `freeCodeCamp Norman`,
     },
-    navItems: [{ a: 'test' }],
     plugins: [
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
