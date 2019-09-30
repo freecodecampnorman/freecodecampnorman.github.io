@@ -30,16 +30,16 @@ const FeedbackPage = () => (
             <Form.Control type="hidden" name="form-name" />
             <Form.Group controlId="name">
                 <Form.Label>Your Name</Form.Label>
-                <Form.Control type="text" placeholder="Your Name" />
+                <Form.Control type="text" name="name" placeholder="Your Name" />
             </Form.Group>
             <Form.Group controlId="email">
                 <Form.Label>Your Email</Form.Label>
-                <Form.Control type="email" placeholder="email@example.com" />
+                <Form.Control type="email" name="email" placeholder="email@example.com" />
                 <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
             </Form.Group>
             <Form.Group controlId="message">
                 <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows="5" placeholder="Your message here" />
+                <Form.Control as="textarea" rows="5" name="message" placeholder="Your message here" />
             </Form.Group>
             <Button variant="primary" type="submit">
                 Send
