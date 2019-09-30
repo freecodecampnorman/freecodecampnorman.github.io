@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './header';
+import Container from 'react-bootstrap/Container';
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -34,7 +35,9 @@ const Layout = ({ children }) => {
                     paddingTop: 0,
                 }}
             >
-                <main>{children}</main>
+                <main>
+                    <Container>{children}</Container>
+                </main>
                 <footer>
                     © {new Date().getFullYear()}, Built with
                     {` `}
