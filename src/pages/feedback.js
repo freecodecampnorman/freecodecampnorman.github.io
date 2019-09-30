@@ -26,7 +26,8 @@ const FeedbackPage = () => (
             to you as soon as possible!
         </p>
 
-        <Form data-netlify="true">
+        <Form name="contact-form" method="POST" data-netlify="true">
+            <Form.Control type="hidden" name="form-name" />
             <Form.Group controlId="name">
                 <Form.Label>Your Name</Form.Label>
                 <Form.Control type="text" placeholder="Your Name" />
