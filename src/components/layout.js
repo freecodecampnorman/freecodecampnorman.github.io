@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
                     <Container>{children}</Container>
                 </main>
                 <footer>
-                    © {new Date().getFullYear()} freeCodeCamp Norman, Built with{' '}
+                    <hr />© {new Date().getFullYear()} freeCodeCamp Norman, Built with{' '}
                     <a href="https://www.gatsbyjs.org">Gatsby</a>
                 </footer>
             </div>

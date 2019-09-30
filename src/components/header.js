@@ -20,8 +20,20 @@ const Header = ({ siteTitle }) => (
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <Link to="/page-2/" className="link-no-style" getProps={isMatch}>
-                        <Nav.Link as="span">Page 2</Nav.Link>
+                    <Link to="/" className="link-no-style" getProps={isMatch}>
+                        <Nav.Link as="span">Home</Nav.Link>
+                    </Link>
+                    <Link to="/slack" className="link-no-style" getProps={isMatch}>
+                        <Nav.Link as="span">Slack</Nav.Link>
+                    </Link>
+                    <Link to="/blog" className="link-no-style" getProps={isMatch}>
+                        <Nav.Link as="span">Blog</Nav.Link>
+                    </Link>
+                    <Link to="/leaderboard" className="link-no-style" getProps={isMatch}>
+                        <Nav.Link as="span">Leaderboard</Nav.Link>
+                    </Link>
+                    <Link to="/feedback" className="link-no-style" getProps={isMatch}>
+                        <Nav.Link as="span">Feedback</Nav.Link>
                     </Link>
                 </Nav>
             </Navbar.Collapse>
