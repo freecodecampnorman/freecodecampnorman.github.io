@@ -9,8 +9,9 @@ const SlackPage = () => (
 
         <h1>Techlahoma Slack</h1>
         <p>
-            Join us on slack! Our friends at Techlahoma have hooked us up with a free Slack channel so we can hang out
-            and chat on our laptops, tablets, phones, and browsers from anywhere.
+            Join us on slack! Our friends at Techlahoma have a free Slack workspace for us to use. This is a great tool
+            to network with others who are just learning and industry professionals alike throughout Oklahoma. The Slack
+            app can be used from your browser, desktop, and mobile devices.
         </p>
 
         <h2>How to get started</h2>
