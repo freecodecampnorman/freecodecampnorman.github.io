@@ -1,38 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import axios from 'axios';
 
-class LeaderboardPage extends React.Component {
-    componentDidMount() {
-        this.getUserDataList();
-    }
+const LeaderboardPage = () => {
+    const users = ['chris-tse', 'joematthews'];
+    const [userDataList, setUserDataList] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    getUserDataList = () => {
-        const users = ['chris-tse', 'joematthews'];
-
+    useEffect(() => {
         const results = users.map(username => {
-            return axios
-                .get(`https://www.freecodecamp.org/api/users/get-public-profile?username=${username}`)
+            return fetch(
+                `https://cors-anywhere.herokuapp.com/https://www.freecodecamp.org/api/users/get-public-profile?username=${username}`
+            )
+                .then(res => res.json())
                 .then(result => {
                     return {
                         username,
-                        points: result.data.entities.user[username].points,
+                        points: result.entities.user[username].points,
                     };
                 });
         });
 
-        Promise.all(results).then(res => console.log(res));
-    };
+        Promise.all(results).then(res => {
+            setUserDataList(res);
+            setLoading(false);
+        });
+    });
 
-    render() {
-        return (
-            <Layout>
-                <SEO title="Leaderboard" />
-            </Layout>
-        );
-    }
-}
+    return (
+        <Layout>
+            <SEO title="Leaderboard" />
+            {loading ? <div>Loading...</div> : <div>{userDataList.map(item => JSON.stringify(item))}</div>}
+        </Layout>
+    );
+};
 
 export default LeaderboardPage;
