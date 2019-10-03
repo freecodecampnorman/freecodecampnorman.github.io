@@ -1,8 +1,10 @@
 import React from 'react';
 
-const LeaderboardRow = () => (
+const LeaderboardRow = ({ userData }) => (
     <tr>
-        <td />
+        <td>{userData.name}</td>
+        <td>{userData.username}</td>
+        <td>{userData.points}</td>
     </tr>
 );
 
