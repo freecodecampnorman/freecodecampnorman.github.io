@@ -1,16 +1,30 @@
 import React, { useState, useEffect } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Layout from '../components/layout';
+import Layout from '../components/defaultLayout';
 import SEO from '../components/seo';
 import LeaderboardTable from '../components/leaderboardtable';
 
 const LeaderboardPage = () => {
-    const users = ['chris-tse', 'joematthews'];
+    const data = useStaticQuery(graphql`
+        query {
+            allFccUsersJson {
+                edges {
+                    node {
+                        username
+                    }
+                }
+            }
+        }
+    `);
+
     const [userDataList, setUserDataList] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const results = users.map(username => {
+        const usernames = data.allFccUsersJson.edges.map(item => item.node.username);
+
+        const results = usernames.map(username => {
             return fetch(
                 `https://cors-anywhere.herokuapp.com/https://www.freecodecamp.org/api/users/get-public-profile?username=${username}`
             )

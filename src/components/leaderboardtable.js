@@ -19,7 +19,7 @@ const LeaderboardTable = ({ userDataList }) => (
         </thead>
         <tbody>
             {userDataList.map(userData => (
-                <LeaderboardRow userData={userData} />
+                <LeaderboardRow key={`${userData.username}-row`} userData={userData} />
             ))}
         </tbody>
     </Table>
