@@ -14,10 +14,11 @@ import Container from 'react-bootstrap/Container';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './layout.scss';
+import './indexStyles.css';
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
-        query SiteTitleQuery {
+        query {
             site {
                 siteMetadata {
                     title
@@ -30,9 +31,7 @@ const Layout = ({ children }) => {
         <>
             <Header siteTitle={data.site.siteMetadata.title} />
 
-            <Container as="main" id="main">
-                {children}
-            </Container>
+            {children}
 
             <footer>
                 <Container>

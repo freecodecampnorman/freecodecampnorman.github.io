@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '../components/layout';
+import Layout from '../components/defaultLayout';
 import SEO from '../components/seo';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
