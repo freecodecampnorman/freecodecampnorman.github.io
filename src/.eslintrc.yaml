@@ -1,5 +1,5 @@
 ---
-extends: ['../.eslintrc.yaml', 'plugin:react/recommended']
+extends: ['../.eslintrc.yaml']
 settings:
     react:
         version: 'detect'
