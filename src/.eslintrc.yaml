@@ -1,12 +1,15 @@
 ---
-  extends: "../.eslintrc.yaml"
-  rules:
+extends: ['../.eslintrc.yaml', 'plugin:react/recommended']
+settings:
+    react:
+        version: 'detect'
+rules:
     react/display-name: 0
     react/jsx-boolean-value: 0
     react/jsx-curly-spacing: 1
     react/jsx-max-props-per-line:
-    - 1
-    - maximum: 6
+        - 1
+        - maximum: 6
     react/jsx-no-duplicate-props: 1
     react/jsx-no-undef: 1
     react/sort-prop-types: 1
@@ -17,21 +20,22 @@
     react/no-did-mount-set-state: [1]
     react/no-did-update-set-state: 1
     react/no-multi-comp: 1
+    react/no-unescaped-entities: 0
     react/no-unknown-property: 1
     react/prop-types: 1
     react/react-in-jsx-scope: 1
     react/self-closing-comp: 1
     react/sort-comp:
-    - 1
-    - order:
-      - /[A-Z_]+$/
-      - static-methods
-      - lifecycle
-      - everything-else
-      - render
+        - 1
+        - order:
+              - /[A-Z_]+$/
+              - static-methods
+              - lifecycle
+              - everything-else
+              - render
     react/wrap-multilines: 0
     jsx-quotes: [2, prefer-double]
     import/extensions: 1
-  plugins:
-    - "react"
-    - "import"
+plugins:
+    - 'react'
+    - 'import'
