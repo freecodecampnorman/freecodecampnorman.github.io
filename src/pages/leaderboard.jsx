@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+import React, { useEffect, useState } from 'react';
 
 import Layout from '../components/defaultLayout';
-import SEO from '../components/seo';
 import LeaderboardTable from '../components/leaderboardtable';
+import LoadingIndicator from '../components/LoadingIndicator';
+import SEO from '../components/seo';
 
 const LeaderboardPage = () => {
     const data = useStaticQuery(graphql`
@@ -48,8 +49,14 @@ const LeaderboardPage = () => {
     return (
         <Layout>
             <SEO title="Leaderboard" />
-            <h1>Leaderboard</h1>
-            {loading ? <div>Loading...</div> : <LeaderboardTable userDataList={userDataList} />}
+            <h1> Leaderboard </h1>{' '}
+            {loading ? (
+                <div style={{ margin: '24px 0' }}>
+                    <LoadingIndicator size={40} />
+                </div>
+            ) : (
+                <LeaderboardTable userDataList={userDataList} />
+            )}{' '}
         </Layout>
     );
 };
