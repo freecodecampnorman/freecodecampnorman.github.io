@@ -12,7 +12,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import Container from 'react-bootstrap/Container';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './defaultLayout.scss';
 import './indexLayout.css';
 
