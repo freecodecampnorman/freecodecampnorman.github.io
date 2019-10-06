@@ -20,7 +20,7 @@ module.exports = {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `gatsby-starter-default`,
-                short_name: `starter`,
+                short_name: `FCC Norman`,
                 start_url: `/`,
                 background_color: `#343A40`,
                 theme_color: `#343A40`,
