@@ -11,7 +11,7 @@ const isMatch = ({ isCurrent }) => {
 };
 
 const Header = ({ siteTitle }) => (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
         <Container>
             <Link className="link-no-style" to="/">
                 <Navbar.Brand>{siteTitle}</Navbar.Brand>
