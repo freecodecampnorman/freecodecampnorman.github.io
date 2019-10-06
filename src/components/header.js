@@ -32,8 +32,8 @@ const Header = ({ siteTitle }) => (
                     <Link to="/leaderboard" className="link-no-style" getProps={isMatch}>
                         <Nav.Link as="span">Leaderboard</Nav.Link>
                     </Link>
-                    <Link to="/feedback" className="link-no-style" getProps={isMatch}>
-                        <Nav.Link as="span">Feedback</Nav.Link>
+                    <Link to="/contact" className="link-no-style" getProps={isMatch}>
+                        <Nav.Link as="span">Contact Us</Nav.Link>
                     </Link>
                 </Nav>
             </Navbar.Collapse>

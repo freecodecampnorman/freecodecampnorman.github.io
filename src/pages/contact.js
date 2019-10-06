@@ -5,18 +5,17 @@ import SEO from '../components/seo';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-const FeedbackPage = () => (
+const ContactPage = () => (
     <Layout>
-        <SEO title="Feedback" />
-        <h1>Feedback</h1>
+        <SEO title="Contact Us" />
+        <h1>Contact Us</h1>
         <blockquote className="blockquote">
-            We all need people who will give us feedback. That's how we improve.
-            <footer className="blockquote-footer">Bill Gates</footer>
+            Honest communication is built on truth and integrity and upon respect of the one for the other.
+            <footer className="blockquote-footer">Benjamin E. Mays</footer>
         </blockquote>
         <blockquote className="blockquote">
-            I think it's very important to have a feedback loop, where you're constantly thinking about what you've done
-            and how you could be doing it better.
-            <footer className="blockquote-footer">Elon Musk</footer>
+            Wise men speak because they have something to say; Fools because they have to say something.
+            <footer className="blockquote-footer">Plato</footer>
         </blockquote>
 
         <h2>Send us a message</h2>
@@ -48,4 +47,4 @@ const FeedbackPage = () => (
     </Layout>
 );
 
-export default FeedbackPage;
+export default ContactPage;
