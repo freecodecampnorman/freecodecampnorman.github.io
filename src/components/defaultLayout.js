@@ -13,7 +13,7 @@ import Header from './header';
 import Container from 'react-bootstrap/Container';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './layout.scss';
+import './defaultLayout.scss';
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
