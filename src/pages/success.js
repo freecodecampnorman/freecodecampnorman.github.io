@@ -10,7 +10,7 @@ const SuccessPage = () => (
 
         <h1>Thank you!</h1>
         <p>We have received your submission and will get back to you as soon as possible.</p>
-        <Link to="/feedback">Return to feedback form</Link>
+        <Link to="/contact">Return to contact form</Link>
     </Layout>
 );
 
