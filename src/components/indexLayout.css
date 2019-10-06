@@ -32,10 +32,6 @@ body {
     padding: 0;
 }
 
-/* .what-is-fcc .section-heading {
-    margin-top: 100px;
-} */
-
 .fcc-logo {
     background: #006400;
 }
@@ -94,6 +90,10 @@ body {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .hero {
+        background-position-y: -200px
+    }
+
     .about-us .section-heading {
         margin-top: 0;
     }
@@ -113,12 +113,25 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .hero {
+        background-position-y: -300px;
+    }
+
     .meetups .content {
         margin-left: 25px;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    /* ...; */
+@media (min-width: 1400px) {
+    .hero {
+        background-position-y: -500px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .hero {
+        height: 50vh;
+        background-position-y: -800px;
+    }
 }

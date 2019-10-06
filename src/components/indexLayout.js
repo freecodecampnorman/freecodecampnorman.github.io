@@ -14,7 +14,7 @@ import Container from 'react-bootstrap/Container';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './layout.scss';
-import './indexStyles.css';
+import './indexLayout.css';
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
