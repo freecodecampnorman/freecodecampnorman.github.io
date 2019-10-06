@@ -21,7 +21,7 @@ const ContactPage = () => (
         <h2>Send us a message</h2>
 
         <p>
-            Have any questions or contact for our group? Fill in the form below and one of the organizers will get back
+            Have any questions or feedback for our group? Fill in the form below and one of the organizers will get back
             to you as soon as possible!
         </p>
 
