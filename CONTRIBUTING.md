@@ -1,6 +1,6 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish to make by opening an issue before making a change.
+When contributing to this repository, please first discuss the change you wish to make by opening an issue or commenting on an existing one before making a change.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
