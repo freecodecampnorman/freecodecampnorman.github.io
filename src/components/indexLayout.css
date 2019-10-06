@@ -1,7 +1,6 @@
 body {
     color: #333;
     font-size: 20px;
-    font-family: 'Hind Madurai', 'Helvetica', sans-serif;
 }
 
 .hero {
@@ -15,14 +14,12 @@ body {
 }
 
 .hero h1 {
-    font-family: 'Montserrat', 'Helvetica', sans-serif;
     font-weight: bold;
     color: white;
     font-size: 3em;
 }
 
 .section-heading {
-    font-family: 'Montserrat', 'Helvetica', sans-serif;
     margin-bottom: 40px;
     font-size: 2em;
     margin-top: 0;
