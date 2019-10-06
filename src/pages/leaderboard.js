@@ -39,7 +39,7 @@ const LeaderboardPage = () => {
         });
 
         Promise.all(results).then(resultList => {
-            resultList.sort((a, b) => parseInt(a.points) < parseInt(b.points));
+            resultList.sort((a, b) => b.points - a.points);
             setUserDataList(resultList);
             setLoading(false);
         });
