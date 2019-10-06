@@ -25,9 +25,6 @@ const IndexPage = () => (
                                 <h2 className="section-heading">What is freeCodeCamp.org?</h2>
 
                                 <p>
-                                    <a href="https://www.freecodecamp.org/">FreeCodeCamp.org</a> is a supportive group
-                                    of over one million coders who build projects, earn free certificates, and get
-                                    experience by coding for non-profits. Go to{' '}
                                     <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a> to sign up for a free
                                     account and start learning with through the curriculum.
                                 </p>
