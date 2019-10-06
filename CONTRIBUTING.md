@@ -10,7 +10,8 @@ Please note we have a code of conduct, please follow it in all your interactions
 2. Create a branch to make your changes on in the forked repository
 3. Increase the version number in the `package.json` to the new version that this
    Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-4. Submit the merge request. One of the organizers will review the request and will merge it in if it looks good, or will provide feedback on how to fix it.
+4. Make sure code is formatted using the `npm run format` script to run ESLint and Prettier checks.
+5. Submit the merge request. One of the organizers will review the request and will merge it in if it looks good, or will provide feedback on how to fix it.
 
 ## Code of Conduct
 
