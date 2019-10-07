@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/defaultLayout';
 import SEO from '../components/seo';
 import LeaderboardTable from '../components/leaderboardtable';
+import LoadingIndicator from '../components/LoadingIndicator';
 
 const LeaderboardPage = () => {
     const data = useStaticQuery(graphql`
@@ -49,7 +50,7 @@ const LeaderboardPage = () => {
         <Layout>
             <SEO title="Leaderboard" />
             <h1>Leaderboard</h1>
-            {loading ? <div>Loading...</div> : <LeaderboardTable userDataList={userDataList} />}
+            {loading ? <LoadingIndicator /> : <LeaderboardTable userDataList={userDataList} />}
         </Layout>
     );
 };
