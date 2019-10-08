@@ -28,6 +28,7 @@ _Have ideas for improvements? Feel free to submit issues and/or pull requests!_
 
     ```shell
     cd freecodecampnorman.github.io/
+    npm install
     gatsby develop
     ```
 
