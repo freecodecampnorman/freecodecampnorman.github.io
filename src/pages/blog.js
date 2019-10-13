@@ -1,14 +1,49 @@
 import React from 'react';
-
+import { graphql } from 'gatsby';
 import Layout from '../components/defaultLayout';
 import SEO from '../components/seo';
+import BlogItem from '../components/blogitem';
+import { Link, useStaticQuery } from 'gatsby';
 
-const BlogPage = () => (
-    <Layout>
-        <SEO title="Blog" />
+const BlogPage = () => {
+    let data = useStaticQuery(graphql`
+        query {
+            allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+                edges {
+                    node {
+                        excerpt(pruneLength: 100)
+                        frontmatter {
+                            author
+                            date(formatString: "MMM Do YYYY")
+                            title
+                            path
+                        }
+                        timeToRead
+                    }
+                }
+            }
+        }
+    `);
 
-        <h1>Blog posts are coming soon!</h1>
-    </Layout>
-);
+    let posts = data.allMarkdownRemark.edges.map(post => ({
+        excerpt: post.node.excerpt,
+        frontmatter: post.node.frontmatter,
+        timeToRead: post.node.timeToRead,
+    }));
+
+    console.log(posts);
+
+    return (
+        <Layout>
+            <SEO title="Blog" />
+
+            <h1>FreeCodeCamp Norman Blog</h1>
+
+            {posts.map(post => (
+                <BlogItem key={`${post.frontmatter.path}-post`} post={post} />
+            ))}
+        </Layout>
+    );
+};
 
 export default BlogPage;
