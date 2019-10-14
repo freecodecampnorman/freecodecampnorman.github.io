@@ -27,7 +27,7 @@ BlogPost.propTypes = {
                 author: PropTypes.string,
             }),
             html: PropTypes.string,
-        })
+        }),
     }),
 };
 
