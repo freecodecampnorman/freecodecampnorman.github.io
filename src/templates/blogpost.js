@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/defaultLayout';
 import SEO from '../components/seo';
@@ -16,6 +17,18 @@ const BlogPost = ({ data: { markdownRemark } }) => {
             <div dangerouslySetInnerHTML={{ __html: html }} />
         </Layout>
     );
+};
+
+BlogPost.propTypes = {
+    data: PropTypes.shape({
+        markdownRemark: PropTypes.shape({
+            frontmatter: PropTypes.shape({
+                title: PropTypes.string,
+                author: PropTypes.string,
+            }),
+            html: PropTypes.string,
+        })
+    }),
 };
 
 export const pageQuery = graphql`
