@@ -24,3 +24,6 @@
         transform: rotate(360deg);
     }
 }
+.lds-dual-ring-container {
+    text-align: center;
+}
