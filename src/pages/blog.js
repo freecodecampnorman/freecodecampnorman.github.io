@@ -31,8 +31,6 @@ const BlogPage = () => {
         timeToRead: post.node.timeToRead,
     }));
 
-    console.log(posts);
-
     return (
         <Layout>
             <SEO title="Blog" />
