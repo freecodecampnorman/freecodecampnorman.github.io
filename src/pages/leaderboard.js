@@ -28,9 +28,7 @@ const LeaderboardPage = () => {
         const usernames = data.allFccUsersJson.edges.map(item => item.node.username);
 
         const results = usernames.map(username => {
-            return fetch(
-                `https://cors-anywhere.herokuapp.com/${BASE_URL}${username}`
-            )
+            return fetch(`https://cors-anywhere.herokuapp.com/${BASE_URL}${username}`)
                 .then(res => res.json())
                 .then(result => {
                     return {
