@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import React from 'react';
+import { Link } from 'gatsby';
 import Nav from 'react-bootstrap/Nav';
 
 import Layout from '../../components/defaultLayout';
 import SEO from '../../components/seo';
 
 const LeaderboardInstructionsPage = () => {
-    const [loading] = useState(true);
-
     return (
         <Layout>
             <SEO title="Leaderboard Instructions" />
