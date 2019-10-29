@@ -31,7 +31,7 @@ const LeaderboardInstructionsPage = () => {
                 <li>Commit your changes.</li>
                 <li>Create a new Pull Request to merge your changes in your branch on your fork into the main repo.</li>
             </ol>
-            
+
             <Link to="/leaderboard" className="link-no-style">
                 <Nav.Link as="span">Go back to the Leaderboard</Nav.Link>
             </Link>
