@@ -1,13 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const LeaderboardRow = ({ userData }) => (
-    <tr>
-        <td>{userData.name || 'Invalid username'}</td>
-        <td>{userData.username}</td>
-        <td>{userData.points || '--'}</td>
-    </tr>
-);
+const LeaderboardRow = ({ userData }) => {
+    const userNameLink = 'https://www.freecodecamp.org/' + userData.username;
+
+    return (
+        <tr>
+            <td>{userData.name || 'Invalid username'}</td>
+            <td>
+                <a href={userNameLink}>{userData.username}</a>
+            </td>
+            <td>{userData.points || '--'}</td>
+        </tr>
+    );
+};
 
 LeaderboardRow.propTypes = {
     userData: PropTypes.shape({
