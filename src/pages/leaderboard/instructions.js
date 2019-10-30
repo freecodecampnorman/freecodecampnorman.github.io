@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Nav from 'react-bootstrap/Nav';
 
 import Layout from '../../components/defaultLayout';
 import SEO from '../../components/seo';
@@ -31,7 +30,7 @@ const LeaderboardInstructionsPage = () => {
             </ol>
 
             <Link to="/leaderboard" className="link-no-style">
-                <Nav.Link as="span">Go back to the Leaderboard</Nav.Link>
+                Go back to the Leaderboard
             </Link>
         </Layout>
     );

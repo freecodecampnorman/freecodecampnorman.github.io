@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import Nav from 'react-bootstrap/Nav';
 
 import Layout from '../../components/defaultLayout';
 import SEO from '../../components/seo';
@@ -52,7 +51,7 @@ const LeaderboardPage = () => {
             <SEO title="Leaderboard" />
             <h1>Leaderboard</h1>
             <Link to="/leaderboard/instructions" className="link-no-style">
-                <Nav.Link as="span">Instructions for adding yourself</Nav.Link>
+                Instructions for adding yourself
             </Link>
             {loading ? <LoadingIndicator /> : <LeaderboardTable userDataList={userDataList} />}
         </Layout>
