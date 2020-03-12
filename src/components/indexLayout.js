@@ -34,7 +34,8 @@ const Layout = ({ children }) => {
 
             <footer>
                 <Container>
-                    <hr />© {new Date().getFullYear()} freeCodeCamp Norman, Built with{' '}
+                    <hr />
+                    ©2018 - {new Date().getFullYear()} freeCodeCamp Norman, Built with{' '}
                     <a href="https://www.gatsbyjs.org">Gatsby</a>
                 </Container>
             </footer>
