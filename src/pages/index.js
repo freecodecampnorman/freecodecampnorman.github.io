@@ -72,7 +72,7 @@ const IndexPage = () => (
                                 <h2 className="section-heading">Meetups</h2>
 
                                 <p>
-                                    We meet every Tuesday evening at 6:30pm at the{' '}
+                                    We meet every other Tuesday evening at 6:30pm at the{' '}
                                     <a href="https://www.ou.edu/innovationhub">Tom Love Innovation Hub</a> on the South
                                     Research Campus of the University of Oklahoma. Even though the meetups are hosted on
                                     campus, <strong>we're open to everyone!</strong> Don't worry if you can't make it at
