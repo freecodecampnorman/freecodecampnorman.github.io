@@ -2,7 +2,7 @@
 
 This is the repository for the website of freeCodeCamp Norman located at https://fccnorman.com
 
-_Have ideas for improvements? Feel free to submit issues and/or pull requests!_
+_Have ideas for improvements? Feel free to submit issues and/or pull requests!!_
 
 ## 🚀 Quick start
 
