@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
-import Layout from '../components/defaultLayout';
-import SEO from '../components/seo';
-import LeaderboardTable from '../components/leaderboardtable';
-import LoadingIndicator from '../components/LoadingIndicator';
+import Layout from '../../components/defaultLayout';
+import SEO from '../../components/seo';
+import LeaderboardTable from '../../components/leaderboardtable';
+import LoadingIndicator from '../../components/LoadingIndicator';
+
+const BASE_URL = 'https://api.freecodecamp.org/internal/api/users/get-public-profile?username=';
 
 const LeaderboardPage = () => {
     const data = useStaticQuery(graphql`
@@ -26,9 +28,7 @@ const LeaderboardPage = () => {
         const usernames = data.allFccUsersJson.edges.map(item => item.node.username);
 
         const results = usernames.map(username => {
-            return fetch(
-                `https://cors-anywhere.herokuapp.com/https://www.freecodecamp.org/api/users/get-public-profile?username=${username}`
-            )
+            return fetch(`https://cors-anywhere.herokuapp.com/${BASE_URL}${username}`)
                 .then(res => res.json())
                 .then(result => {
                     return {
@@ -50,6 +50,9 @@ const LeaderboardPage = () => {
         <Layout>
             <SEO title="Leaderboard" />
             <h1>Leaderboard</h1>
+            <Link to="/leaderboard/instructions" className="link-no-style">
+                Instructions for adding yourself
+            </Link>
             {loading ? <LoadingIndicator /> : <LeaderboardTable userDataList={userDataList} />}
         </Layout>
     );
