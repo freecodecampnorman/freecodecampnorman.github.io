@@ -51,8 +51,14 @@ const IndexPage = () => (
                                 and introduce yourself and meet others who are also learning to code. Create a free
                                 account on <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a> and bring your
                                 laptop if you have one! If you don't have one, message one of the organizers on{' '}
-                                <a href="https://www.meetup.com/freecodecamp-norman/">Meetup.com</a>
-                                and we will try and prepare one for you.
+                                <a href="https://www.meetup.com/freecodecamp-norman/">Meetup.com</a> and we will try and
+                                prepare one for you.
+                            </p>
+                            <p>
+                                Find out more about what we're doing by going to our <a href="blog">Blog</a>.
+                            </p>
+                            <p>
+                                Have questions? Please <a href="contact">contact us</a>.
                             </p>
                         </div>
                     </div>
@@ -72,6 +78,9 @@ const IndexPage = () => (
                                     campus, <strong>we're open to everyone!</strong> Don't worry if you can't make it at
                                     6:30 on the dot, or if you can't stay the whole two hours. Feel free to join us when
                                     you can and for as long as you want.
+                                </p>
+                                <p>
+                                    Don't forget to sign up for <a href="slack">the Techlahoma Slack</a>!
                                 </p>
                             </div>
                         </div>
